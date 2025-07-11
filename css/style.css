@@ -164,18 +164,7 @@ body {
 }
 
 
-/* desde 768px para abajo */
-@media (max-width: 768px) {
-  .recuadro {
-    width: 80%;
-    font-size: 16px;
-  }
 
-  .card {
-    width: 45%;
-    margin: 15px;
-  }
-}
 
 /* móviles pequeños */
 @media (max-width: 480px) {
