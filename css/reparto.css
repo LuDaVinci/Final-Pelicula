@@ -1,0 +1,144 @@
+body{
+        background-color: rgb(253, 252, 203);
+
+}
+
+
+article{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+}
+
+.reparto p{
+    text-indent: 20px;
+    text-align: left;
+}
+.actores{
+    margin-top: 25px;
+    color: black;
+}
+
+.estilo_actores{
+    text-decoration: none;
+    cursor: pointer;
+    color: blueviolet;
+}
+.estilo_actores:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.imagenes_reparto{
+   background-color: rgb(252, 250, 151);
+    width: 90%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin:10px;
+    margin-bottom: 105px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+
+}
+/* buscar una manera de simplificar estos pasos 
+figcaption - padding
+figura- tamaño iguales?*/
+
+figure{
+    background-color: tomato;
+    border: black 5px dashed;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 25px;
+    width: 250px;
+    height: auto;
+    margin: 20px;
+}
+
+figcaption{
+    color: black;
+    background-color: tomato;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 25px;  
+}
+.jenniferLawrence_KatnissEverdeen_figcaption{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.joshHutcherson_PeetaMellark_figcaption{
+    padding-left: 35px;
+    padding-right: 35px;
+
+}
+.liamHemsworth_GaleHawthorne_figcaption{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.woodyHarrelson_HaymitchAbernathy_figcaption{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.lennyKravitz_Cinna_figcaption{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.elizabethBanks_EffieTrinket_figcaption{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.willowShields_PrimroseEverdeen_figcaption{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.donaldSutherland_PresidenteSnow_figcaption{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.wesBentley_SenecaCrane_figcaption{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.stanleyTucci_CaesarFlickerman_figcaption{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.alexanderLudwig_Cato_figcaption{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.isabelleFuhrman_Clove_figcaption{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.amandlaStenberg_Rue_figcaption{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.dayoOkeniy_Thresh_figcaption{
+    padding-left: 40px;
+    padding-right: 40px;}
+
+/* ver si se puede mover a global.css */
+/* .volver_arriba a{
+    text-decoration: none;
+}
+.volver_arriba{
+    color: rgb(49, 10, 49);
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.volver_arriba :hover{
+    color: black;
+}
+ */

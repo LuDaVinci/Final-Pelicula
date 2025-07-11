@@ -1,0 +1,44 @@
+
+main {
+  background-image: url(../imagenes/error/fondo_error.PNG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 70px); /* pantalla completa menos el header */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 100px 60px 60px;
+}
+
+/* --- Mensaje de error --- */
+.mensaje-error {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(248, 211, 0);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.mensaje-error h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.boton-volver {
+  display: inline-block;
+  background-color: rgb(248, 211, 0);
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: gold;
+}
+
+

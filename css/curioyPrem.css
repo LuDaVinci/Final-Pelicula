@@ -1,0 +1,181 @@
+body{
+        background-color: rgb(253, 252, 203);
+
+}
+
+/* .indice{line-height: 1000px 0px 0px;} */
+#margenes{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 90%;
+}
+
+#indice_{
+background-color:#d62222;
+    color: rgb(0, 0, 0);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+.p_indice{
+        line-height: 15px ;
+        
+    }
+.p_indice{
+        line-height: 35px ;
+        
+    }
+.indice{
+        font-size: 25px;
+        padding-top: 20px; /* utilice este padding para q indice se separe del borde de arriba */
+    }
+
+}
+#indice_ a{
+text-decoration: none;
+color: azure;
+}
+
+#indice_ a:hover{
+    color: rgb(0, 0, 0);
+
+}
+.contenido_derecha {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+.texto_estudio {
+  flex: 2;
+  min-width: 300px;
+}
+
+#contenedor_logos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  min-width: 200px;
+}
+#lionsgate_logo,#Color_Force_Logo{
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #d62222;
+  padding: 5px;
+  background-color: white;
+}
+
+
+#cuatro_personajes_estan_comiendo_alimientos_capitolio{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.personajes_comida{
+    border: 5px solid #d62222;
+}
+
+.indice_puntos{
+    margin-top: 55px;
+}
+
+.contenedor_tabla{
+    margin-top: 30px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border:solid 2px rgba(0, 0, 0, 0.2);
+}
+table{
+    color: black;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+thead{
+    color: whitesmoke;
+    background-color:#d62222;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+th{
+    font-size: 17px;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+td{
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* color verde */
+tbody .verde_ganador{
+    background-color: rgb(196, 252, 196);
+}
+/* color rojo */
+tbody .rojo_nominado{
+    background-color: rgb(253, 188, 188);
+}
+/* caundo el cursor pase por arriba cambie de color */
+tbody tr:hover{
+    background: rgba(243, 248, 174, 0.616);
+}
+
+
+#premios_ganados{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+figure {
+    border:  #222 solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    margin-bottom: 55px;
+  }
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+  }
+  #john_mtv{
+height: 318.984px;
+width: auto;  }
+
+/* .volver_arriba a{
+    text-decoration: none;
+}
+ */
+/* ver si se puede mover a global.css */
+/* .volver_arriba{
+    color: rgb(49, 10, 49);
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.volver_arriba :hover{
+    color: black;
+} */
+

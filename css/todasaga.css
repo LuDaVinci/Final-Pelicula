@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    background-color: rgb(253, 252, 203);
+}
+
+/* ver si se puede mover a global.css */
+#margenes {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 80px;
+}
+
+
+#libros_indice_saga a {
+    text-decoration: none;
+    color: black;
+}
+
+#libros_indice_saga:hover {
+    text-decoration: underline #d62222;
+}
+
+#peli_indice_saga a {
+    text-decoration: none;
+    color: black;
+}
+
+#peli_indice_saga:hover {
+    color: rgb(153, 7, 7);
+    text-decoration: underline;
+}
+
+.libros_pelicula_indice {
+    font-size: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.libros_pelicula_indice:hover {
+    color: #d62222;
+    text-decoration: underline;
+}
+
+
+/* seguir trando de  acihcar el indice */
+.contededor_indice_saga {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.titulo_indice_todasaga {
+    margin: 0px;
+    font-size: 25px;
+}
+
+.indice {
+    background-color: #d62222;
+    color: whitesmoke;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-radius: 20px;
+    width: 70%;
+    box-shadow: -1px 5px 3px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.indice_librosypeliculas {
+    color: black;
+    background-color: rgb(253, 252, 203);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    line-height: 35px;
+}
+
+/* mide el espacio entre Libros y Pelis c/sus puntos */
+.columna h3 {
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+}
+
+
+
+.tapas_libros {
+    background-color: rgb(153, 7, 7);
+    border: black 5px dashed;
+    width: 250px;
+    height: auto;
+    margin-bottom: 85px;
+}
+
+.posterpeli_libro_contenedor {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    /* Espacio entre imágenes */
+    gap: 40px;
+
+
+}
+
+.poster_peli {
+    background-color: rgb(153, 7, 7);
+    border: black 5px dashed;
+    width: 250px;
+    height: auto;
+
+}
+
+/* ver si se puede mover a global.css */
+/* .volver_arriba a {
+    text-decoration: none;
+}
+.volver_arriba {
+    color: rgb(49, 10, 49);
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.volver_arriba :hover {
+    color: black;
+} */

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <title>Contacto</title>
+    <link rel="icon" href="../imagenes/favicon/saga_favicon.PNG">
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html" class="titulo_header">
+                <h1 class="nombreSaga">Saga: JUEGOS DEL HAMBRE</h1>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+
+                <li><a href="../paginas/sobrePeli.html">Sobre la Película</a>
+                    <ul class="submenu">
+                        <li><a href="../paginas/sobrePeli.html#sinoppeli_sobrepeli">Sinopsis</a></li>
+                        <li><a href="../paginas/sobrePeli.html#localidades_sobrepeli">Localizaciones</a></li>
+                        <li><a href="../paginas/sobrePeli.html#detallesproc_sobrepeli">Detalles sobre la Produccion</a>
+                        </li>
+                        <li><a href="../paginas/sobrePeli.html#soundtrack_sobrepeli">Katniss Sings - 'The Hanging Tree'</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../paginas/reparto.html">Reparto</a>
+                    <ul class="submenu">
+                        <li><a href="../paginas/reparto.html#imag_reparto">Imagenes</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../paginas/todasaga.html">La Saga</a>
+                    <ul class="submenu">
+                        <li><a href="../paginas/todasaga.html#libros_info">Libros</a></li>
+                        <li><a href="../paginas/todasaga.html#peliculas_info">Películas</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../paginas/curioyPrem.html">Curiosidades y Premios</a>
+                    <ul class="submenu">
+                        <li><a href="../paginas/curioyPrem.html#estgrabacion_curio">Estudio de Grabacion</a></li>
+                        <li><a href="../paginas/curioyPrem.html#rodaje_curio">Curiocidades Rodaje</a></li>
+                        <li><a href="../paginas/curioyPrem.html#genearal_curio">Curiocidades Generales</a></li>
+                        <li><a href="../paginas/curioyPrem.html#prem_curio">Premios</a></li>
+                    </ul>
+                </li>
+                </li>
+                <li><a href="../paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+<!-- <ul>
+ <div class="dos_comlunas_contacto">
+    <li><h2>Contacto</h2></li>
+        <div><form>
+            <p><label for="Nombres">Nombres: <input type="text"></label></p>
+            <p><label for="Apellido">Apellido: <input type="text"></label></p>
+            <p><label for="Apodo">Apodo: <input type="text"></label></p>
+            <p><label for="Mail">Mail: <input type="text"></label></p>
+            <p><label for="Comentario">Comentario: <textarea name="Comentario" id=""></textarea></label></p>
+            <button type="submit">Enviar</button>
+        
+        </form> 
+    </div>  
+ </div>
+
+ <div class="dos_comlunas_contacto">
+    <li><h2>Redes Sociales</h2></li>
+    <ul><li></li></ul>
+ </div> 
+</ul> -->
+  <div class="formulario_contenedor">
+    <h2>Formulario de Contacto</h2>
+    <form class="formulario" action="../paginas/confirmacion.html" >
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" required>
+
+      <label for="apodo">Tu apodo</label>
+      <input type="text" id="apodo" name="apodo">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="no te olvides del @" required>
+      <span class="ayuda">Ejemplo: usuario@email.com</span>
+
+      <label for="personaje">¿Cuál es tu personaje favorito?</label>
+      <select id="personaje" name="personaje" required>
+        <option value="">Selecciona uno</option>
+        <option value="katniss">Katniss Everdeen</option>
+        <option value="peeta">Peeta Mellark</option>
+        <option value="gale">Gale Hawthorne</option>
+        <option value="haymitch">Haymitch Abernathy</option>
+        <option value="effie">Effie Trinket</option>
+        <option value="finnick">Finnick Odair</option>
+        <option value="president_snow">Presidente Snow</option>
+        <option value="prim">Primrose Everdeen</option>
+      </select>
+      <label for="mensaje">Escribí tu mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</body>
+    
+</div>
+</main>
+    
+<footer>
+        <div class="lista_redes_contenido">
+            <ul class="list_info_footer">
+                <li>Alumna: Lucia Piazzi</li>
+                <li>Trabajo Práctico: Página para banda o artista musical</li>
+                <li>Materia: Programación Web 1</li>
+                <li>Carrera: Analista de Sistemas</li>
+            </ul>
+
+            <div class="redes_footer">
+                <p class="redes_titulo_footer">Siguenos también en:</p>
+                <div class="iconos_redes_footer">
+                    <a href="https://www.facebook.com/TheHungerGamesMovie/" target="_blank">
+                        <img src="../imagenes/redes sociales/facebook_logo.PNG" alt="Facebook">
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLJ7A97yl9oXpfq64XZCN9CEQVKMCsHAXh" target="_blank">
+                        <img src="../imagenes/redes sociales/YouTube_log.PNG" alt="YouTube">
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLJ7A97yl9oXpfq64XZCN9CEQVKMCsHAXh" target="_blank">
+                        <img src="../imagenes/redes sociales/twitter_x_logo.PNG" alt="X (Twitter)">
+                    </a>
+                    <a href="https://www.tiktok.com/@hungergamesofficial" target="_blank">
+                        <img src="../imagenes/redes sociales/tiktok_logo.PNG" alt="TikTok">
+                    </a>
+                    <a href="https://www.instagram.com/thehungergames/" target="_blank">
+                        <img src="../imagenes/redes sociales/instagram_logo.PNG" alt="Instagram">
+                    </a>
+                    <a href="https://hungergames.movie//" target="_blank">
+                        <img src="../imagenes/redes sociales/pagoficial_logo.PNG" alt="Pagian Oficial">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
