@@ -1,163 +1,214 @@
 body {
-    box-sizing: border-box;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    background-color: rgb(253, 252, 203);
-
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background-color: rgb(253, 252, 203);
 }
 
 .recuadro {
   width: 60%;
   margin: 55px auto;
   padding: 20px;
-  background-color: #f3f3f3; 
+  background-color: #f3f3f3;
   border-radius: 10px;
   font-size: 18px;
   color: #333;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: justify;
-  
 }
 
 .card_container {
   display: flex;
   justify-content: center;
 }
+
 .cards {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-right: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  flex-wrap: wrap;
 }
 
 .card--1 .card__img,
 .card--1 .card__img--hover {
-    background-image: url(../imagenes/saga/peliculas/peli_juegoshambre.JPEG);
+  background-image: url(../imagenes/saga/peliculas/peli_juegoshambre.JPEG);
 }
 .card--2 .card__img,
 .card--2 .card__img--hover {
-    background-image: url(../imagenes/saga/peliculas/peli_enllamas.JPEG);
+  background-image: url(../imagenes/saga/peliculas/peli_enllamas.JPEG);
 }
 .card--3 .card__img,
 .card--3 .card__img--hover {
-    background-image: url(../imagenes/saga/peliculas/peli_sintajo1.JPEG);
+  background-image: url(../imagenes/saga/peliculas/peli_sintajo1.JPEG);
 }
 .card--4 .card__img,
 .card--4 .card__img--hover {
-    background-image: url(../imagenes/saga/peliculas/peli_sintajo2.JPEG);
+  background-image: url(../imagenes/saga/peliculas/peli_sintajo2.JPEG);
 }
 .card--5 .card__img,
 .card--5 .card__img--hover {
-    background-image: url(../imagenes/saga/peliculas/peli_baladapajaroscantoresserpientes.WEBP);
+  background-image: url(../imagenes/saga/peliculas/peli_baladapajaroscantoresserpientes.WEBP);
 }
 .card--6 .card__img,
 .card--6 .card__img--hover {
-    background-image: url(../imagenes/saga/libros/libro_amanecerenlacosecha.JPEG);
+  background-image: url(../imagenes/saga/libros/libro_amanecerenlacosecha.JPEG);
 }
 
-
 .card__img {
-    visibility: hidden;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 235px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .card__info-hover {
-    position: absolute;
-    padding: 16px;
-    width: 100%;
-    opacity: 0;
-    top: 0;
-}
-.card__img--hover {
-    transition: 0.2s all ease-out;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    position: absolute;
-    height: 235px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    top: 0;
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
 }
 
-.card--1{
-    margin-left: 25px;
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
 }
+
+.card--1 {
+  margin-left: 25px;
+}
+
 .card {
-    margin-right: 25px;
-    margin-bottom: 55px;
-    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-    background-color: #fff;
-    width: 33.3%;
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+  margin-right: 25px;
+  margin-bottom: 55px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-    transform: scale(1.10, 1.10);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
 }
 
 .card__info {
-    z-index: 2;
-    background-color: #fff;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    padding: 16px 24px 24px 24px;
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
 }
 
 .card__category {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-    font-weight: 500;
-    color: #868686;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
 }
 
 .card__title {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-family: 'Roboto Slab', serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .card__by {
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
 }
 
 .card__author {
-    font-weight: 600;
-    text-decoration: none;
-    color: #7a0202;
+  font-weight: 600;
+  text-decoration: none;
+  color: #7a0202;
 }
-.card__author:hover{
-    text-decoration: underline;
+.card__author:hover {
+  text-decoration: underline;
 }
 
 .card:hover .card__img--hover {
-    height: 100%;
-    opacity: 0.3;
+  height: 100%;
+  opacity: 0.3;
 }
 
 .card:hover .card__info {
-    background-color: transparent;
-    position: relative;
+  background-color: transparent;
+  position: relative;
 }
 
 .card:hover .card__info-hover {
-    opacity: 1;
+  opacity: 1;
+}
+
+
+/* desde 768px para abajo */
+@media (max-width: 768px) {
+  .recuadro {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 45%;
+    margin: 15px;
+  }
+}
+
+/* móviles pequeños */
+@media (max-width: 480px) {
+  .recuadro {
+    width: 90%;
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .card__img,
+  .card__img--hover {
+    height: 180px;
+  }
+
+  .card__info {
+    padding: 12px 16px 16px 16px;
+  }
+}
+
+
+@media (min-width: 360px) {
+  body {
+    font-size: 16px;
+  }
 }
