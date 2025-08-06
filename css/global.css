@@ -69,22 +69,28 @@ header {
     font-weight: 200;
 }
 
+/* Estilo general para el botón hamburguesa */
 .menu-toggle {
   display: none;
   cursor: pointer;
   padding: 10px;
+  background: none;
+  border: none;
 }
 
+/* Estilo de los enlaces */
 nav a {
   text-decoration: none;
   color: rgb(248, 211, 0);
   font-weight: 600;
 }
 
+/* Hover sobre enlaces */
 nav a:hover {
   color: white;
 }
 
+/* Menú principal */
 nav ul.menu {
   margin: 0;
   padding: 0;
@@ -94,10 +100,12 @@ nav ul.menu {
   list-style: none;
 }
 
+/* Elementos del menú */
 nav ul.menu > li {
   position: relative;
 }
 
+/* Submenús ocultos inicialmente */
 nav ul.submenu {
   display: none;
   position: absolute;
@@ -112,6 +120,7 @@ nav ul.submenu {
   z-index: 10;
 }
 
+/* Enlaces dentro del submenú */
 nav ul.submenu li a {
   display: block;
   padding: 20px;
@@ -119,14 +128,36 @@ nav ul.submenu li a {
   text-decoration: none;
 }
 
-nav ul.menu > li:hover > ul.submenu {
-  display: block;
-}
-
+/* Hover en los enlaces del submenú */
 nav ul.submenu li a:hover {
   color: whitesmoke;
   background-color: rgb(50, 50, 50);
 }
+
+/* Mostrar submenú al pasar el mouse (pantallas grandes) */
+nav ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+
+/* Flecha dentro de elementos con submenú */
+.has-submenu .arrow-icon {
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Flecha apuntando hacia abajo (cerrado) */
+.has-submenu .arrow-icon svg {
+  fill: white;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+/* Flecha apuntando hacia arriba (abierto) */
+.has-submenu.open .arrow-icon svg {
+  transform: rotate(180deg);
+  fill: rgb(248, 211, 0); /* amarillo */
+}
+
 
 footer {
     color: rgb(249, 200, 136);
@@ -188,6 +219,18 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* celular */
 @media (max-width: 360px) {
     header {
@@ -209,25 +252,45 @@ footer {
   }
 
   nav ul.menu {
-    flex-direction: column;
     display: none;
+    flex-direction: column;
     width: 100%;
     background-color: black;
   }
 
-  nav ul.menu.show {
+  nav ul.menu.active {
     display: flex;
   }
 
   nav ul.menu > li {
     width: 100%;
-    text-align: left;
+  }
+
+  nav ul.menu > li > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #333;
   }
 
   nav ul.submenu {
     position: static;
-    box-shadow: none;
+    background-color: #111;
   }
+
+  nav ul.submenu li a {
+    padding: 15px 30px;
+  }
+/* sacar hover en móviles */
+  nav ul.menu > li:hover > ul.submenu {
+    display: none; 
+  }
+/* sacar clic sobre el ícono, solo clic en el <a> */
+  .has-submenu .arrow-icon {
+    pointer-events: none; 
+  }
+
 
     .lista_redes_contenido {
         flex-direction: column;
