@@ -189,7 +189,7 @@ footer {
 
 
 /* celular */
-@media (min-width: 360px) {
+@media (max-width: 360px) {
     header {
         flex-direction: column;
         height: auto;
