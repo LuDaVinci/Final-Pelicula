@@ -37,9 +37,7 @@ strong {
     font-style: normal;
 }
 
-nav a:hover {
-    color: rgb(255, 255, 255);
-}
+
 
 .titulo_header {
     text-decoration: none;
@@ -68,6 +66,18 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
     font-optical-sizing: auto;
     font-weight: 200;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: rgb(248, 211, 0);
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
 }
 
 nav ul.menu {
@@ -182,4 +192,82 @@ footer {
 
 .iconos_redes_footer a img:hover {
     transform: scale(1.2);
+}
+
+
+/* celular */
+@media (min-width: 360px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 2%;
+    text-align: center;
+  }
+
+  .nombreSaga {
+    font-size: 28px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav ul.menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul.menu > li > a {
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  nav ul.submenu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  nav ul.submenu li a {
+    padding: 10px;
+  }
+
+  .lista_redes_contenido {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .redes_footer {
+    text-align: center;
+    padding-right: 0;
+    margin-top: 20px;
+  }
+
+  .iconos_redes_footer {
+    justify-content: center;
+  }
+
+  .iconos_redes_footer a {
+    width: 36px;
+    height: 30px;
+    padding: 4px;
+  }
+
+  footer {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .list_info_footer,
+  .redes_titulo_footer {
+    font-size: 18px;
+  }
+
+  .boton-arriba {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+
 }
