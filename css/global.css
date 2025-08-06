@@ -70,12 +70,11 @@ header {
 }
 
 nav ul.menu {
-  margin: 0;
-  padding: 0;
-  display: flex;
+  display: flex; 
   gap: 25px;
   list-style: none;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul.menu > li {
@@ -210,26 +209,23 @@ footer {
         text-align: center;
     }
 
-/* Mostrar botón hamburguesa */
   .menu-toggle {
-    display: block;
+    display: block; /* mostramos el icono hamburguesa */
     padding: 10px;
     cursor: pointer;
   }
 
-  /* Ocultar menú horizontal */
+
   nav ul.menu {
-    display: none;
+    display: none; /* ocultamos el menú horizontal */
     flex-direction: column;
     background-color: black;
-    padding: 15px;
+    padding: 10px;
     gap: 10px;
   }
 
-  /* Mostrar menú cuando se active */
   nav ul.menu.show {
-    display: flex;
-  }
+    display: flex; /* lo mostramos cuando el JS agrega la clase "show" */
 
   /* Ajustar enlaces en vertical */
   nav ul.menu > li > a {
@@ -288,5 +284,5 @@ footer {
         right: 15px;
         padding: 8px;
     }
-
+}
 }
