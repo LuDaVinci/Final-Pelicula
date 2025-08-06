@@ -42,6 +42,7 @@ strong {
 .titulo_header {
     text-decoration: none;
 }
+
 .titulo_header:hover {
     text-decoration: none;
 }
@@ -63,7 +64,7 @@ header {
     font-size: 35px;
     color: rgb(248, 211, 0);
     text-shadow: 2px -3px 6px rgb(255, 255, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
 }
@@ -76,10 +77,6 @@ header {
     padding: 10px;
 }
 
-nav a:hover {
-    color: rgb(255, 255, 255);
-}
-
 nav ul.menu {
     margin: 0;
     padding: 0;
@@ -89,15 +86,19 @@ nav ul.menu {
     list-style: none;
 }
 
-nav ul.menu > li {
+nav ul.menu>li {
     position: relative;
 }
 
-nav ul.menu > li > a {
+nav ul.menu>li>a {
     padding: 6px;
     text-decoration: none;
     color: rgb(248, 211, 0);
     font-weight: 600;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
 }
 
 nav ul.submenu {
@@ -110,7 +111,7 @@ nav ul.submenu {
     list-style: none;
     padding: 0;
     margin: 0;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 
@@ -121,7 +122,7 @@ nav ul.submenu li a {
     text-decoration: none;
 }
 
-nav ul.menu > li:hover > ul.submenu {
+nav ul.menu>li:hover>ul.submenu {
     display: block;
 }
 
@@ -197,80 +198,99 @@ footer {
 
 /* celular */
 @media (min-width: 360px) {
-  header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 2%;
-    text-align: center;
-  }
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 2%;
+        text-align: center;
+    }
 
-  .nombreSaga {
-    font-size: 28px;
-    margin-bottom: 10px;
-    justify-content: center;
-    text-align: center;
-  }
-    .menu-toggle {
+    .nombreSaga {
+        font-size: 28px;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*     .menu-toggle {
       display: block;
     }
-  
+   */
     nav ul.menu {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        padding: 15px;
+        gap: 10px;
     }
 
-  nav ul.menu > li > a {
-    font-size: 16px;
-    padding: 5px;
-  }
+    nav ul.menu.show {
+        display: flex;
+    }
 
-  nav ul.submenu {
-    position: static;
-    box-shadow: none;
-    background-color: transparent;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  nav ul.submenu li a {
-    padding: 10px;
-  }
+    nav ul.menu>li>a {
+        display: block;
+        padding: 10px 0;
+    }
 
-  .lista_redes_contenido {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+    nav ul.submenu {
+        position: static;
+        box-shadow: none;
+    }
 
-  .redes_footer {
-    text-align: center;
-    padding-right: 0;
-    margin-top: 20px;
-  }
+    nav ul.menu>li:hover>ul.submenu {
+        display: none;
+        /* evita hover en mobile */
+    }
 
-  .iconos_redes_footer {
-    justify-content: center;
-  }
+    nav ul.menu>li>ul.submenu {
+        display: none;
+    }
 
-  .iconos_redes_footer a {
-    width: 36px;
-    height: 30px;
-    padding: 4px;
-  }
+    nav ul.menu>li.open>ul.submenu {
+        display: block;
+    }
 
-  footer {
-    font-size: 20px;
-    padding: 20px 0;
-  }
+    .lista_redes_contenido {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-  .list_info_footer,
-  .redes_titulo_footer {
-    font-size: 18px;
-  }
+    .redes_footer {
+        text-align: center;
+        padding-right: 0;
+        margin-top: 20px;
+    }
 
-  .boton-arriba {
-    bottom: 15px;
-    right: 15px;
-    padding: 8px;
-  }
+    .iconos_redes_footer {
+        justify-content: center;
+    }
+
+    .iconos_redes_footer a {
+        width: 36px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    footer {
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .list_info_footer,
+    .redes_titulo_footer {
+        font-size: 18px;
+    }
+
+    .boton-arriba {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px;
+    }
 
 }

@@ -1,16 +1,10 @@
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.getElementById("menu-toggle");
-  const menu = document.getElementById("main-menu");
+const toggleBtn = document.getElementById('menu-toggle');
+const menu = document.querySelector('nav ul.menu');
 
-  toggle.addEventListener("click", () => {
-    if (menu.style.display === "flex" || menu.style.display === "") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "flex";
-    }
-  });
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('show');
 });
 
 let currentIndex = 0;
