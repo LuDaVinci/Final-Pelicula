@@ -76,6 +76,7 @@ nav ul.menu {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 nav ul.menu > li {
