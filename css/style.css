@@ -32,10 +32,10 @@ body {
     margin-right: 15px;
 }
 
-.card--1 .card__img,
+/* .card--1 .card__img,
 .card--1 .card__img--hover {
     background-image: url(../imagenes/saga/peliculas/peli_juegoshambre.JPEG);
-}
+} */
 .card--2 .card__img,
 .card--2 .card__img--hover {
     background-image: url(../imagenes/saga/peliculas/peli_enllamas.JPEG);
