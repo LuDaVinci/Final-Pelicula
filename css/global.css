@@ -69,71 +69,69 @@ header {
     font-weight: 200;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 30px;
-    color: rgb(248, 211, 0);
-    cursor: pointer;
-    padding: 10px;
-}
-
 nav ul.menu {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
-nav ul.menu>li {
-    position: relative;
+nav ul.menu > li {
+  position: relative;
 }
 
-nav ul.menu>li>a {
-    padding: 6px;
-    text-decoration: none;
-    color: rgb(248, 211, 0);
-    font-weight: 600;
+nav ul.menu > li > a {
+  padding: 6px;
+  text-decoration: none;
+  color: rgb(248, 211, 0);
+  font-weight: 600;
 }
 
 nav a:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 nav ul.submenu {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 0, 0);
-    top: 100%;
-    left: 0;
-    min-width: 180px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+  display: none;
+  position: absolute;
+  background-color: black;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+  z-index: 10;
 }
 
 nav ul.submenu li a {
-    display: block;
-    padding: 20px;
-    color: rgb(248, 211, 0);
-    text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: rgb(248, 211, 0);
+  text-decoration: none;
 }
 
-nav ul.menu>li:hover>ul.submenu {
-    display: block;
+nav ul.menu > li:hover > ul.submenu {
+  display: block;
 }
 
 nav ul.submenu li a:hover {
-    color: whitesmoke;
-    background-color: rgb(50, 50, 50);
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
 }
 
+/* Espaciado opcional entre <li> */
 .espaciado_li li {
-    margin-top: 35px;
-    margin-bottom: 15px;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Botón hamburguesa oculto en pantallas grandes */
+.menu-toggle {
+  display: none;
 }
 
 footer {
@@ -212,48 +210,46 @@ footer {
         text-align: center;
     }
 
-    /*     .menu-toggle {
-      display: block;
-    }
-   */
-    nav ul.menu {
-        display: none;
-        flex-direction: column;
-        background-color: black;
-        padding: 15px;
-        gap: 10px;
-    }
+/* Mostrar botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
 
-    nav ul.menu.show {
-        display: flex;
-    }
+  /* Ocultar menú horizontal */
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    padding: 15px;
+    gap: 10px;
+  }
 
-    .menu-toggle {
-        display: block;
-    }
+  /* Mostrar menú cuando se active */
+  nav ul.menu.show {
+    display: flex;
+  }
 
-    nav ul.menu>li>a {
-        display: block;
-        padding: 10px 0;
-    }
+  /* Ajustar enlaces en vertical */
+  nav ul.menu > li > a {
+    display: block;
+    padding: 10px 0;
+  }
 
-    nav ul.submenu {
-        position: static;
-        box-shadow: none;
-    }
+  /* Submenús siempre ocultos (sin hover en mobile) */
+  nav ul.submenu {
+    position: static;
+    box-shadow: none;
+  }
 
-    nav ul.menu>li:hover>ul.submenu {
-        display: none;
-        /* evita hover en mobile */
-    }
+  nav ul.menu > li:hover > ul.submenu {
+    display: none;
+  }
 
-    nav ul.menu>li>ul.submenu {
-        display: none;
-    }
-
-    nav ul.menu>li.open>ul.submenu {
-        display: block;
-    }
+  nav ul.menu > li.open > ul.submenu {
+    display: block;
+  }
 
     .lista_redes_contenido {
         flex-direction: column;

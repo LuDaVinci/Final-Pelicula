@@ -1,10 +1,10 @@
 
 
-const toggleBtn = document.getElementById('menu-toggle');
-const menu = document.querySelector('nav ul.menu');
+const toggleBtn = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
 
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('show');
+toggleBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("show");
 });
 
 let currentIndex = 0;
