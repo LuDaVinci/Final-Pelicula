@@ -80,8 +80,8 @@ nav {
   list-style: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .menu > li {
@@ -102,7 +102,7 @@ nav {
   list-style: none;
   top: 100%;
   left: 0;
-  width: max-content;
+  min-width: 180px;
   z-index: 999;
 }
 
@@ -250,7 +250,6 @@ footer {
   .menu li.open > .submenu {
     display: block;
   }
-
 
 
 
