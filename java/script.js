@@ -7,18 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
   toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
-    iconHamb.style.display = menu.classList.contains('active') ? 'none' : 'inline-block';
-    iconClose.style.display = menu.classList.contains('active') ? 'inline-block' : 'none';
+    const isActive = menu.classList.contains('active');
+    iconHamb.style.display = isActive ? 'none' : 'inline-block';
+    iconClose.style.display = isActive ? 'inline-block' : 'none';
   });
 
   submenuItems.forEach(item => {
-    item.addEventListener('click', function (e) {
+    const arrow = item.querySelector('.arrow-icon');
+
+    arrow.addEventListener('click', (e) => {
       if (window.innerWidth <= 360) {
         e.preventDefault();
+        e.stopPropagation(); // Para evitar navegar por el <a>
 
         const isOpen = item.classList.contains('open');
 
-        // Cerrar todos los submenús
         submenuItems.forEach(i => {
           i.classList.remove('open');
           i.querySelector('.submenu').style.display = 'none';

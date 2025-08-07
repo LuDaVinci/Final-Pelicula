@@ -77,7 +77,6 @@ header {
 
 
 
-
 .menu-toggle {
   display: none;
   background: none;
@@ -144,7 +143,7 @@ nav ul.menu > li:hover > ul.submenu {
 }
 
 .arrow-icon {
-  display: none; /* Oculto por defecto */
+  display: none;
   margin-left: 8px;
   vertical-align: middle;
 }
