@@ -1,44 +1,53 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('nav ul.menu');
   const submenuItems = document.querySelectorAll('.has-submenu');
+  const iconHamburger = document.querySelector('.icon-hamburger');
+  const iconClose = document.querySelector('.icon-close');
 
-  // Evento para mostrar/ocultar el menú principal en móviles
+  // Toggle menú principal
   toggle.addEventListener('click', () => {
     menu.classList.toggle('active');
+
+    const isActive = menu.classList.contains('active');
+    iconHamburger.style.display = isActive ? 'none' : 'inline';
+    iconClose.style.display = isActive ? 'inline' : 'none';
   });
 
-  // Evento para desplegar/cerrar submenús y cambiar flechas
+  // Toggle submenús en móvil
   submenuItems.forEach(item => {
     item.addEventListener('click', function (e) {
-      // Solo activa esta lógica en móviles (360px o menos)
       if (window.innerWidth <= 360) {
-        e.preventDefault(); // Evita seguir el enlace
-        
-        // Opcional: cerrar otros submenús
+        e.preventDefault();
+
         submenuItems.forEach(i => {
-          if (i !== item) i.classList.remove('open');
+          if (i !== item) {
+            i.classList.remove('open');
+            const submenu = i.querySelector('.submenu');
+            if (submenu) submenu.style.display = 'none';
+
+            const arrowIcon = i.querySelector('.arrow-icon svg');
+            if (arrowIcon) {
+              arrowIcon.innerHTML = `<path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
+              arrowIcon.setAttribute('fill', '#FFFFFF');
+            }
+          }
         });
 
         item.classList.toggle('open');
-
         const submenu = item.querySelector('.submenu');
-        submenu.style.display = item.classList.contains('open') ? 'block' : 'none';
-
-        const icon = item.querySelector('.arrow-icon svg');
+        const arrowIcon = item.querySelector('.arrow-icon svg');
 
         if (item.classList.contains('open')) {
-          // Flecha hacia arriba (amarilla)
-          icon.innerHTML = `<path d="M480-554 283-357l-43-43 240-240 240 240-43 43-197-197Z"/>`;
-          icon.setAttribute('fill', 'rgb(248, 211, 0)');
+          submenu.style.display = 'block';
+          arrowIcon.innerHTML = `<path d="M480-554 283-357l-43-43 240-240 240 240-43 43-197-197Z"/>`;
+          arrowIcon.setAttribute('fill', 'rgb(248, 211, 0)');
         } else {
-          // Flecha hacia abajo (blanca)
-          icon.innerHTML = `<path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
-          icon.setAttribute('fill', '#FFFFFF');
+          submenu.style.display = 'none';
+          arrowIcon.innerHTML = `<path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
+          arrowIcon.setAttribute('fill', '#FFFFFF');
         }
       }
     });
   });
 });
-
