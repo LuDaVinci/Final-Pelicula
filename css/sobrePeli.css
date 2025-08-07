@@ -114,3 +114,68 @@ background-color: rgb(240, 7, 7);
 } */
 
 
+@media (max-width: 360px) {
+    body {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .texto_sobrepeli {
+        width: 95%;
+        margin: 10px auto;
+        text-align: justify;
+    }
+
+    #voluntaria_derecha {
+        float: none;
+        display: block;
+        margin: 15px auto;
+        width: 90%;
+        max-width: 280px;
+        box-shadow: none;
+    }
+
+    .contenedor_autores {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .autor_figure {
+        width: 90%;
+        max-width: 250px;
+    }
+
+    figure {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .video_contenedor {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        margin: 10px;
+        padding: 0;
+    }
+
+    .boton-arriba {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .subrayado {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
