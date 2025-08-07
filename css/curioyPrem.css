@@ -179,3 +179,99 @@ width: auto;  }
     color: black;
 } */
 
+
+@media (max-width: 360px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  #margenes {
+    margin: 20px 10px;
+    width: 95%;
+  }
+
+  #indice_ {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .indice {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .p_indice {
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+  .contenido_derecha {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .texto_estudio,
+  #contenedor_logos {
+    min-width: 100%;
+  }
+
+  #contenedor_logos {
+    align-items: center;
+  }
+
+  #lionsgate_logo,
+  #Color_Force_Logo {
+    width: 80%;
+    height: auto;
+  }
+
+  #cuatro_personajes_estan_comiendo_alimientos_capitolio {
+    margin: 30px 0;
+  }
+
+  .personajes_comida {
+    width: 90%;
+    height: auto;
+  }
+
+  .contenedor_tabla {
+    overflow-x: auto;
+    padding: 10px;
+    display: block;
+  }
+
+  table {
+    width: 700px; /* más grande que la pantalla */
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  #premios_ganados {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  figure {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  #john_mtv {
+    width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+}
