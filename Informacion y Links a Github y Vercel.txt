@@ -1,0 +1,9 @@
+Alumna: Lucia Piazzi.
+Final: Diseño y Programación de pagina web sobre la película - los Juegos del Hambre .
+Materia: Programación Web 1.
+Carrera: Analista de Sistemas.
+Profesor:Facundo Ivan Romero.
+
+
+Link a GitHub: https://github.com/LuDaVinci/Final-Pelicula.git
+Link a Vercel:https://final-pelicula.vercel.app/
