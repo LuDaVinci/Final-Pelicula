@@ -71,6 +71,17 @@ header {
 
 
 
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle .icon-cerrar {
+  display: none;
+}
 
 nav a {
   text-decoration: none;
@@ -87,8 +98,8 @@ nav ul.menu {
   padding: 0;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
   list-style: none;
-  background-color: black;
 }
 
 nav ul.menu > li {
@@ -98,39 +109,37 @@ nav ul.menu > li {
 nav ul.submenu {
   display: none;
   position: absolute;
-  background-color: #000;
+  background-color: black;
   top: 100%;
   left: 0;
   min-width: 180px;
   list-style: none;
   padding: 0;
   margin: 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 
 nav ul.submenu li a {
   display: block;
-  padding: 15px;
+  padding: 20px;
   color: rgb(248, 211, 0);
+  text-decoration: none;
 }
 
 nav ul.submenu li a:hover {
-  background-color: #333;
-  color: white;
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
 }
 
-/* Mostrar submenús en hover en pantallas grandes */
 nav ul.menu > li:hover > ul.submenu {
   display: block;
 }
 
 .arrow-icon {
+  display: none; /* Oculto por defecto */
   margin-left: 8px;
-  display: none; /* Ocultar por defecto */
-}
-
-.has-submenu .arrow-icon svg {
-  transition: transform 0.3s;
+  vertical-align: middle;
 }
 
 
@@ -223,24 +232,15 @@ footer {
     }
 
 
-   .menu-toggle {
+  .menu-toggle {
     display: block;
-    background: none;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  .arrow-icon {
-    display: inline-block;
-    vertical-align: middle;
-    pointer-events: none;
   }
 
   nav ul.menu {
     display: none;
     flex-direction: column;
     width: 100%;
+    background-color: black;
   }
 
   nav ul.menu.active {
@@ -262,20 +262,18 @@ footer {
   nav ul.submenu {
     position: static;
     background-color: #111;
-    display: none;
-  }
-
-  nav ul.menu > li.open > ul.submenu {
-    display: block;
   }
 
   nav ul.submenu li a {
-    padding-left: 30px;
+    padding: 15px 30px;
   }
 
-  /* Anula el hover en móviles */
   nav ul.menu > li:hover > ul.submenu {
     display: none;
+  }
+
+  .arrow-icon {
+    display: inline-block;
   }
 }
 
