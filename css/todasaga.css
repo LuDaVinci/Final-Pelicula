@@ -139,3 +139,67 @@ body {
 .volver_arriba :hover {
     color: black;
 } */
+ @media (max-width: 360px) {
+    #margenes {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contededor_indice_saga {
+        flex-direction: column;
+        padding: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .indice {
+        width: 100%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .indice_librosypeliculas {
+        flex-direction: column;
+        padding: 20px 10px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .columna {
+        margin-bottom: 20px;
+    }
+
+    .columna h3 {
+        font-size: 16px;
+    }
+
+    .titulo_indice_todasaga {
+        font-size: 20px;
+    }
+
+    .tapas_libros,
+    .poster_peli {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 40px;
+    }
+
+    .posterpeli_libro_contenedor {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .espaciado_li {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    .libros_pelicula_indice {
+        font-size: 15px;
+    }
+
+}
