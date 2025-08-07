@@ -9,18 +9,18 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
 
-    // Cambiar íconos hamburguesa/cerrar
     const isOpen = menu.classList.contains('active');
     iconHamburguesa.style.display = isOpen ? 'none' : 'inline';
     iconCerrar.style.display = isOpen ? 'inline' : 'none';
   });
 
-  // Mostrar/ocultar submenús
+  // Funcionalidad submenús en móviles
   submenuItems.forEach(item => {
     item.addEventListener('click', function (e) {
       if (window.innerWidth <= 360) {
         e.preventDefault();
 
+        // Cerrar otros
         submenuItems.forEach(i => {
           if (i !== item) {
             i.classList.remove('open');
@@ -42,11 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (icon) {
           if (isOpen) {
-            // Flecha hacia arriba (abierto)
+            // Flecha arriba
             icon.innerHTML = `<path d="M480-554 283-357l-43-43 240-240 240 240-43 43-197-197Z"/>`;
             icon.setAttribute('fill', 'rgb(248, 211, 0)');
           } else {
-            // Flecha hacia abajo (cerrado)
+            // Flecha abajo
             icon.innerHTML = `<path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
             icon.setAttribute('fill', '#FFFFFF');
           }
