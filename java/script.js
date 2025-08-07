@@ -42,3 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.querySelector(".cards-carousel");
+    const next = document.getElementById("nextCard");
+    const prev = document.getElementById("prevCard");
+
+    next.addEventListener("click", () => {
+      carousel.scrollBy({ left: carousel.offsetWidth * 0.9, behavior: 'smooth' });
+    });
+
+    prev.addEventListener("click", () => {
+      carousel.scrollBy({ left: -carousel.offsetWidth * 0.9, behavior: 'smooth' });
+    });
+  });
