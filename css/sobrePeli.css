@@ -136,6 +136,8 @@ figcaption {
     width: 90%;
     max-width: 280px;
     box-shadow: none;
+    box-shadow: 0 0 20px rgb(240, 7, 7);
+
   }
 
   .contenedor_autores {
