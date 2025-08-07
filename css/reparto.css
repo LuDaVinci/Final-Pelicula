@@ -151,8 +151,13 @@ figcaption{
     }
 
     figure {
-        width: 90%;
+        width: 95%;
         margin: 10px auto;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
     }
 
     figcaption {
