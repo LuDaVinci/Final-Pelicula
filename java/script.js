@@ -18,11 +18,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const isOpen = item.classList.contains('open');
 
+        // Cerrar todos los submenús
         submenuItems.forEach(i => {
           i.classList.remove('open');
           i.querySelector('.submenu').style.display = 'none';
           i.querySelector('.arrow-icon svg').innerHTML = `
-            <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
+            <path fill="#FFFFFF" d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z"/>`;
         });
 
         if (!isOpen) {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           const icon = item.querySelector('.arrow-icon svg');
           icon.innerHTML = `
-            <path d="M480-554 283-357l-43-43 240-240 240 240-43 43-197-197Z"/>`;
+            <path fill="#f8d300" d="M480-554 283-357l-43-43 240-240 240 240-43 43-197-197Z"/>`;
         }
       }
     });
