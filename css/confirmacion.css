@@ -46,3 +46,34 @@ main.mensaje-confirmacion p {
   transform: scale(1.05);
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 360px) {
+  main.mensaje-confirmacion {
+    padding: 40px 10px;
+  }
+
+  main.mensaje-confirmacion h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  main.mensaje-confirmacion p {
+    font-size: 16px;
+  }
+
+  .boton_volver {
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 280px;
+  }
+}
