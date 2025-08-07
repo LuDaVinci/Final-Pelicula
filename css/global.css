@@ -69,6 +69,9 @@ header {
     font-weight: 200;
 }
 
+
+
+
 nav a {
   text-decoration: none;
   color: rgb(248, 211, 0);
@@ -120,20 +123,19 @@ nav ul.submenu li a:hover {
   background-color: rgb(50, 50, 50);
 }
 
-/* Hover en escritorio */
+/* Hover  */
 nav ul.menu > li:hover > ul.submenu {
   display: block;
 }
 
-/* Flechas */
-.has-submenu .arrow-icon {
+/* Iconos flecha visibles solo en móviles */
+.arrow-icon {
   margin-left: 8px;
-  display: inline-block;
-  vertical-align: middle;
+  display: none;
 }
 
 .has-submenu .arrow-icon svg {
-  transition: transform 0.3s ease, fill 0.3s ease;
+  transition: transform 0.3s;
 }
 
 /* Botón hamburguesa oculto por defecto */
@@ -233,29 +235,25 @@ footer {
         text-align: center;
     }
 
+@media (max-width: 360px) {
   .menu-toggle {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     background: none;
     border: none;
+    padding: 10px;
     cursor: pointer;
-    margin: 10px;
-    z-index: 1001;
   }
 
-  .icon-hamburger,
-  .icon-close {
-    width: 32px;
-    height: 32px;
-    fill: white;
+  .arrow-icon {
+    display: inline-block;
+    vertical-align: middle;
+    pointer-events: none;
   }
 
   nav ul.menu {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: black;
-    padding: 0;
   }
 
   nav ul.menu.active {
@@ -272,33 +270,20 @@ footer {
     align-items: center;
     padding: 15px;
     border-top: 1px solid #333;
-    color: rgb(248, 211, 0);
   }
 
   nav ul.submenu {
-    display: none;
     position: static;
     background-color: #111;
   }
 
   nav ul.submenu li a {
-    padding: 15px 30px;
+    padding-left: 30px;
   }
 
-  nav ul.menu > li.open > ul.submenu {
-    display: block;
-  }
-
+  /* Quitar hover en móviles */
   nav ul.menu > li:hover > ul.submenu {
     display: none;
-  }
-
-  .has-submenu .arrow-icon svg {
-    transition: transform 0.3s ease;
-  }
-
-  .has-submenu.open .arrow-icon svg {
-    transform: rotate(180deg);
   }
 
 
@@ -339,4 +324,7 @@ footer {
         right: 15px;
         padding: 8px;
     }
+}
+
+
 }
