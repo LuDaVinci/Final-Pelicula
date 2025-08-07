@@ -113,12 +113,35 @@ figcaption {
 .volver_arriba :hover{
     color: black;
 } */
+/* Estilos generales */
+.imagen-expandible {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
 
+/* Solo cuando esté expandida */
+.imagen-expandida {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-color: black;
+  z-index: 9999;
+}
 
 @media (max-width: 360px) {
   body {
     text-align: left;
     font-size: 14px;
+  }
+
+ body.no-scroll {
+    overflow: hidden; /* evita el scroll cuando está expandida */
   }
 
   .texto_sobrepeli {

@@ -47,3 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const imagen = document.querySelector(".imagen-expandible");
+
+    if (window.innerWidth <= 360) {
+      imagen.addEventListener("click", function () {
+        if (imagen.classList.contains("imagen-expandida")) {
+          imagen.classList.remove("imagen-expandida");
+          document.body.classList.remove("no-scroll");
+        } else {
+          imagen.classList.add("imagen-expandida");
+          document.body.classList.add("no-scroll");
+        }
+      });
+    }
+  });
