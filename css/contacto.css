@@ -73,3 +73,45 @@ main {
 .formulario button:hover {
   background-color: #a82323;
 }
+
+
+
+@media (max-width: 360px) {
+  main {
+    background-size: 100% auto; /* Mejor ajuste en pantallas pequeñas */
+    padding: 20px 10px;
+  }
+
+  .formulario_contenedor {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .formulario h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .formulario label {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .formulario input,
+  .formulario select,
+  .formulario textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+
+
+  .formulario button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .ayuda {
+    font-size: 11px;
+  }
+}
